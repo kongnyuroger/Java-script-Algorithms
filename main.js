@@ -1,4 +1,14 @@
-import { factorail } from "./factorail";
+function mergSort(arr){
+   if(arr.length < 2){
+      return arr
+   }
+   const mid = Math.floor(arr.length / 2);
+   const leftArr = arr.slice(0, mid);
+   const rightArr= arr.slice(mid);
+
+}
+const arr = [8, 20, -2, 4, -6,]
+console.log(mergSort(arr))
 
  
 
@@ -75,7 +85,7 @@ birthdayCakeCandles([3, 2, 1, 3])
 
 
 
-function timeConversion(s) {
+function timeConversion(s){
    // Write your code here
   return s.split(':').map((i, index) => {
       if(index === 0) {
@@ -142,7 +152,7 @@ console.log(x%5)
 
 
 
-function ountApplesAndOranges(s, t, a, b, apples, oranges) {
+function ountApplesAndOranges(s, t, a, b, apples, oranges){
    // Write your code here
    let applesOnHouse = 0;
    let orangesOnHouse = 0;
@@ -160,23 +170,7 @@ function ountApplesAndOranges(s, t, a, b, apples, oranges) {
    }
 
 }
-function ountApplesAndOranges(s, t, a, b, apples, oranges) {
-   // Write your code here
-   let applesOnHouse = 0;
-   let orangesOnHouse = 0;
-   apples.forEach(apple => {
-      const pos = apple + a;
-      if(pos >= s && pos <= t){
-         applesOnHouse++;
-      }
-   });
-   oranges.forEach(orange => {
-      const pos = orange + a;
-      if(pos >= s && pos <= t){
-         orangesOnHouse++;
-      }
-   });
-}
+
 
 function kangaroo(x1, v1, x2, v2) {
    // Write your code here
@@ -190,14 +184,3 @@ function kangaroo(x1, v1, x2, v2) {
       }
    }
 }
-function kangaroo(x1, v1, x2, v2) {
-   // Write your code here
-    if(x1 + v1  == x2 + v2){
-           return 'YES'
-       }
-       else{
-           return 'NO'
-       }
-}
-
-   
