@@ -1,4 +1,4 @@
-function search (n , t){
+export function search (n , t){
     for(let i = 0; i <= n.length; i++){
        if(n[i] === t){
             return i;
