@@ -10,12 +10,30 @@ function mergSort(arr){
    return merge(mergSort(leftArr), mergSort(rightArr))
 }
 const arr = [8, 20, -2, 4, -6,]
-console.log(mergSort(arr))
+/*console.log(mergSort(arr))*/
 
  
+function breakingRecords(scores) {
+   // Write your code here
+   let breakingRecords = [0, 0];
+   let maxRecord = scores[0];
+   let minRecord = scores[0];
 
+   scores.map(score => {
+      if (score > maxRecord){
+         maxRecord = score;
+         breakingRecords[0]++
+      }
+      if (score < minRecord){
+         minRecord = score;
+         breakingRecords[1]++
+      }
+   })
 
+   console.log ( breakingRecords )
+}
 
+breakingRecords([10, 5,20, 20, 4, 5, 2, 25, 1])
 
 
 
