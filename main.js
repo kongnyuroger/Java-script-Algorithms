@@ -204,3 +204,22 @@ function kangaroo(x1, v1, x2, v2) {
       }
    }
 }
+
+function snail (depth){
+   var days = 0;
+   var down = 2;
+   var up = 7;
+   var result = 0;
+
+   while(result <= depth){
+      result +=up;
+      days++;
+      if( result >= depth){
+         console.log(days);
+         break;
+      }
+      result-= down
+   }
+  
+}
+snail(31)
