@@ -220,6 +220,38 @@ function snail (depth){
       }
       result-= down
    }
-  
 }
 snail(31)
+
+function CurencyConverter (amount, rate){
+   let convertedAmount = amount*rate;
+   convertedAmount = ~~convertedAmount
+   console.log(convertedAmount)
+}
+CurencyConverter(100, 1.1)
+
+const data = [
+   {
+      name: 'joel',
+      contact: 67374892,
+      home: 'Buea Town'
+   },
+   {
+      name: 'Bryan',
+      contact: 609439293,
+      home: 'mile 16'
+   },
+   {
+      name: 'lawrence',
+      contact: 67374892,
+      home: 'molyko'
+   },
+]
+
+function contactManager(data){
+   data.map(person => {
+      console.log(person.name + ' phone number is ' + person.contact)
+   })
+}
+contactManager(data)
+
